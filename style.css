@@ -1,0 +1,97 @@
+/* Common CSS Start */
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+  outline: 0;
+  color: #e5e7eb;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  background-color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+
+.clr {
+  clear: both;
+}
+/* Common CSS End */
+
+/* Menu CSS Start */
+.menu,
+.menu__item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__logo {
+  width: 5%;
+}
+
+.menu__item li {
+  margin: 0 0 0 2rem;
+}
+/* Menu CSS End */
+
+.content__item,
+.news__item,
+.syllabus__item {
+  display: flex;
+}
+
+.content__item li,
+.news__item li,
+.syllabus__item li {
+  margin: 0 1rem 0 0;
+  background-color: #152937;
+  padding: 0.5rem;
+  border-radius: 10%;
+  color: #f3f4f6;
+}
+
+.instructors__image {
+  display: flex;
+  /* flex-flow: row nowrap; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.instructors__image img {
+  width: 50%;
+  border-radius: 50%;
+  /* border-color: aqua;
+  border-style: solid; */
+}
+
+.instructors__image-caption {
+  font-weight: bold;
+  padding: 0.8rem 0;
+}
