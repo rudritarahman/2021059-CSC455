@@ -21,19 +21,27 @@
   </head>
   <body class="container">
     <nav class="menu">
-      <a href="#" class="menu__logo"
-        ><img src="/images/logo.png" alt="logo"
+      <a href="#" class="menu__logo" style="margin-left: 3rem"
+        ><img src="/images/logo.png" alt="logo" style="width: 6%"
       /></a>
       <ul class="menu__item">
-        <li><a href="#news">News</a></li>
-        <li><a href="#details">Details</a></li>
-        <li><a href="#instructors">Instructors</a></li>
-        <li><a href="#syllabus">Syllabus</a></li>
-        <li><a href="#responses">AMA Responses</a></li>
+        <li>
+          <a href="#news" style="color: #fbbf24">News</a>
+        </li>
+        <li><a href="#details" style="color: #4ade80">Details</a></li>
+        <li>
+          <a href="#instructors" style="color: #60a5fa">Instructors</a>
+        </li>
+        <li><a href="#syllabus" style="color: #a78b5a">Syllabus</a></li>
+        <li>
+          <a href="#responses" style="color: #f87171; margin-right: 3rem"
+            >AMA Responses</a
+          >
+        </li>
       </ul>
     </nav>
 
-    <div id="content">
+    <div id="content" style="margin-top: 10rem">
       <h1>
         CS106S<br /><span style="color: #d1d5db">Coding for Social Good</span>
       </h1>
@@ -42,7 +50,7 @@
         <li>540-108</li>
         <li>T 4:30p</li>
       </ul>
-      <p>
+      <p style="margin-top: 3rem">
         CS 106S is a survey course on the applications of fundamental computer
         science concepts from CS 106B to problems in the social good space (such
         as health, government, education, and environment). Each week consists
@@ -79,7 +87,7 @@
         scheme of things. We want to show you ways to put the skills you have
         learned to good social use! Here are our objectives:
       </p>
-      <ul>
+      <ul class="details--list">
         <li>
           <b>Awareness:</b> For students to gain awareness about the
           applicability of technology and computer science to enact social good
@@ -208,8 +216,8 @@
       </p>
     </div>
     <div id="syllabus">
-      <h3>Syllabus</h3>
-      <p>The syllabus will be posted shortly!</p>
+      <h2>Syllabus</h2>
+      <p><i>The syllabus will be posted shortly!</i></p>
       <!--
       <div class="syllabus__item">
         <ul>
@@ -345,7 +353,7 @@
         Our responses will go here.
       </p>
       <!--https://stackoverflow.com/questions/41220717/collapse-without-javascript-->
-      <details>
+      <details style="line-height: 1.8; text-align: justify">
         <summary><b>How can I get involved with CS + Social Good?</b></summary>
         <span
           >The best way to get involved is to join our
@@ -361,8 +369,8 @@
       </details>
     </div>
 
-    <footer>
-      <p>
+    <footer style="margin: 5rem 0 3rem">
+      <p style="font-size: 1rem">
         The source code for this website is
         <u
           ><a href="https://github.com/milesmcc/cs106s"
