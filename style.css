@@ -1,5 +1,7 @@
 /* Common CSS Start */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,15 +12,8 @@
 h1,
 h2,
 h3 {
-  color: black;
-  margin: 3.5rem 0 1.5rem;
+  margin: 1rem 0 0.3rem;
 }
-
-p {
-  line-height: 1.8;
-  text-align: justify;
-}
-
 a {
   text-decoration: none;
 }
@@ -47,7 +42,6 @@ table {
   } */
 
 .container {
-  margin: 0 auto;
   font-family: "Playfair Display", serif;
 }
 
@@ -92,7 +86,6 @@ table {
 /* Hide the link that should open and close the menu on small screens */
 .menu .menu--icon {
   display: none;
-  color: aliceblue;
 }
 
 /*
@@ -119,6 +112,7 @@ table {
 /* Home Start */
 #home {
   height: 25vh;
+  width: 100vw;
   background-image: url(/images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -128,7 +122,7 @@ table {
 }
 
 .overlay--background {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 25vh;
   top: 0;
@@ -156,7 +150,7 @@ table {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15rem solid rgb(0, 0, 0); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: -1rem auto 0; /* Gives that scrolling effect as the typing happens */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em;
   animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
 }
@@ -185,8 +179,65 @@ table {
 
 /* About Start */
 #about {
-  height: 35vh;
-  background-color: antiquewhite;
+  padding: 0rem 2rem;
+  margin-bottom: 2rem;
+}
+
+#about h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  color: rgb(4, 155, 255);
+}
+
+.wrap-circles {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: #000;
+}
+
+.circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background: #ffcdb2;
+  overflow: hidden;
+}
+.circle.per-25 {
+  background-image: conic-gradient(#b5838d 25%, #ffcdb2 0);
+}
+.circle.per-50 {
+  background-image: conic-gradient(#b5838d 50%, #ffcdb2 0);
+}
+.circle.per-75 {
+  background-image: conic-gradient(#b5838d 75%, #ffcdb2 0);
+}
+.circle.per-100 {
+  background-image: conic-gradient(#b5838d 100%, #ffcdb2 0);
+}
+.circle .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 115px;
+  background: #000;
+  border-radius: 50%;
+  font-size: 1.85em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
 }
 /* About End */
 
@@ -199,8 +250,46 @@ table {
 
 /* Contact Start */
 #contact {
-  height: 20vh;
-  background-color: rgb(185, 221, 150);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+#contact h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  color: rgb(4, 155, 255);
+}
+#contact .social-link {
+  display: flex;
+}
+
+#contact .social-link li a i {
+  padding: 1rem 0.5rem 0 0;
+  font-size: 1.5rem;
+}
+
+#contact form input {
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  font-family: "Playfair Display", serif;
+}
+
+#contact form textarea {
+  margin-top: 1rem;
+  font-family: "Playfair Display", serif;
+}
+
+#contact form button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #04aa6d;
+  background-color: beige;
+  cursor: progress;
 }
 /* Contact End */
 
@@ -209,7 +298,7 @@ table {
   .menu a:not(:first-child) {
     display: none;
   }
-  .navbar a.menu--icon {
+  #navbar a.menu--icon {
     float: right;
     display: block;
   }
