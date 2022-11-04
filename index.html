@@ -27,30 +27,62 @@
       <a href="#project">Project</a>
       <a href="#contact">Contact</a>
       <a href="javascript:void(0);" class="menu--icon" onclick="myFunction()"
-        ><i class="bx bx-menu"></i
+        ><i class="bx bx-menu" style="color: red"></i
       ></a>
     </nav>
     <!-- ====================== Home Start ====================== -->
     <header id="home">
-      <i class="bx bxs-cog"></i>
-
       <div class="overlay--background">
         <div class="content">
           <h1 style="text-transform: uppercase; white-space: nowrap">
             Hi, I am
             <span style="color: #0000ff">Rudrita Rahman</span>
           </h1>
-          <h2 style="text-transform: uppercase">A Front-End Developer</h2>
-          <h3 style="text-align: center; margin-top: 0.5rem">
-            based in Dhaka, Bangldesh.
-          </h3>
+          <h2 style="text-transform: uppercase">A Front-End Developer.</h2>
         </div>
       </div>
     </header>
     <!-- ====================== Home End ====================== -->
 
     <!-- ====================== About Start ====================== -->
-    <section id="about"></section>
+    <section id="about">
+      <h1>About Me</h1>
+      <h3 style="text-transform: uppercase">Personal Infos</h3>
+      <table>
+        <tr>
+          <td><b>Name:</b> Rudrita Rahman</td>
+          <td>
+            <b>E-mail:</b>
+            <a href="mailto:rudritarahman@gmail.com">rudritarahman@gmail.com</a>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Date of Birth:</b> 09 March, 2001</td>
+          <td><b>Nationality:</b> Bangladeshi</td>
+        </tr>
+      </table>
+      <h3 style="text-transform: uppercase">My Skills</h3>
+      <!--https://alvarotrigo.com/blog/progress-bar-css/-->
+      <div class="wrap-circles">
+        <div class="circle per-0">
+          <div class="inner">0%</div>
+        </div>
+        <div class="circle per-25">
+          <div class="inner">25%</div>
+        </div>
+        <div class="circle per-50">
+          <div class="inner">50%</div>
+        </div>
+        <div class="circle per-75">
+          <div class="inner">75%</div>
+        </div>
+        <div class="circle per-100">
+          <div class="inner">100%</div>
+        </div>
+      </div>
+
+      <h3 style="text-transform: uppercase">My Education</h3>
+    </section>
     <!-- ====================== About End ====================== -->
 
     <!-- ====================== Project Start ====================== -->
@@ -58,7 +90,69 @@
     <!-- ====================== Project End ====================== -->
 
     <!-- ====================== Contact Start ====================== -->
-    <section id="contact"></section>
+    <section id="contact">
+      <h1>Get in Touch</h1>
+      <p>
+        Feel free to get in touch with me. I am always open to discussing new
+        projects, creative ideas or opportunities to be part of your visions.
+      </p>
+      <h3>Address</h3>
+      <p>27/1, 27/2 West Malibagh, Ramna, Dhaka - 1217</p>
+      <h3>Mail Me</h3>
+      <a href="mailto:rudritarahman@gmail.com">rudritarahman@gmail.com</a>
+      <h3>Call Me</h3>
+      <p>(+880)-1789378131</p>
+      <ul class="social-link">
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </li>
+      </ul>
+      <form action="#">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="YOUR NAME"
+        /><br />
+        <input
+          type="text"
+          id="mail"
+          name="mail"
+          placeholder="YOUR E-MAIL"
+        /><br />
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="YOUR SUBJECT"
+        /><br />
+        <textarea
+          name="message"
+          rows="5"
+          cols="30"
+          placeholder="YOUR MESSAGE"
+        ></textarea>
+        <br />
+        <button
+          type="button"
+          onclick="alert('Message Sent Successfully. Thank You!')"
+        >
+          Send Message!
+        </button>
+      </form>
+    </section>
     <!-- ====================== Contact End ====================== -->
 
     <!-- ====================== Footer Start ====================== -->
