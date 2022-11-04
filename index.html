@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rudrita Rahman Portfolio</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Box Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
+    <nav class="menu" id="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="menu--icon" onclick="myFunction()"
+        ><i class="bx bx-menu"></i
+      ></a>
+    </nav>
+    <!-- ====================== Home Start ====================== -->
+    <header id="home">
+      <i class="bx bxs-cog"></i>
+
+      <div class="overlay--background">
+        <div class="content">
+          <h1 style="text-transform: uppercase; white-space: nowrap">
+            Hi, I am
+            <span style="color: #0000ff">Rudrita Rahman</span>
+          </h1>
+          <h2 style="text-transform: uppercase">A Front-End Developer</h2>
+          <h3 style="text-align: center; margin-top: 0.5rem">
+            based in Dhaka, Bangldesh.
+          </h3>
+        </div>
+      </div>
+    </header>
+    <!-- ====================== Home End ====================== -->
+
+    <!-- ====================== About Start ====================== -->
+    <section id="about"></section>
+    <!-- ====================== About End ====================== -->
+
+    <!-- ====================== Project Start ====================== -->
+    <section id="project"></section>
+    <!-- ====================== Project End ====================== -->
+
+    <!-- ====================== Contact Start ====================== -->
+    <section id="contact"></section>
+    <!-- ====================== Contact End ====================== -->
+
+    <!-- ====================== Footer Start ====================== -->
+    <section id="footer"></section>
+    <!-- ====================== Footer End ====================== -->
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "menu") {
+          x.className += " responsive";
+        } else {
+          x.className = "menu";
+        }
+      }
+    </script>
+  </body>
+</html>
