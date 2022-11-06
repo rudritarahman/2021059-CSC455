@@ -108,7 +108,7 @@ table {
 /* Home Start */
 #home {
   width: 100%;
-  height: 20vh;
+  height: 40vh;
   background-image: url(/images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -119,7 +119,7 @@ table {
 .overlay--background {
   position: absolute;
   width: 100%;
-  height: 20vh;
+  height: 40vh;
   top: 0;
   left: 0;
   right: 0;
@@ -380,6 +380,12 @@ footer {
   #navbar a.menu--icon {
     float: right;
     display: block;
+  }
+
+  #home,
+  .overlay--background {
+    width: 100%;
+    height: 20vh;
   }
 
   .content {
