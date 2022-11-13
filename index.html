@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
 
@@ -58,40 +58,83 @@
     <!-- ====================== About Start ====================== -->
     <section id="about">
       <h1>About Me</h1>
-      <h3>Personal Infos</h3>
-      <table>
-        <tr>
-          <td><b>Name:</b> Rudrita Rahman</td>
-          <td>
-            <b>E-mail:</b>
-            <a href="mailto:rudritarahman@gmail.com">rudritarahman@gmail.com</a>
-          </td>
-        </tr>
-        <tr>
-          <td><b>Date of Birth:</b> 09 March, 2001</td>
-          <td><b>Nationality:</b> Bangladeshi</td>
-        </tr>
-      </table>
-      <h3>Skills</h3>
-      <!--https://alvarotrigo.com/blog/progress-bar-css/-->
-      <div class="wrap-circles">
-        <div class="circle HTML">
-          <div class="inner">90% <br />HTML</div>
+      <div class="about">
+        <div class="personal-infos">
+          <h3 style="text-align: center">Personal Infos</h3>
+          <p><b>Name: </b>Rudrita Rahman</p>
+          <p>
+            <b>E-mail: </b
+            ><a href="mailto:rudritarahman@gmail.com"
+              >rudritarahman@gmail.com</a
+            >
+          </p>
+          <p><b>Date of Birth: </b>09 March, 2001</p>
+          <p><b>Nationality: </b>Bangladeshi</p>
+          <ul class="social-link" style="display: flex">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/" target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+            </li>
+          </ul>
+          <!--
+          <table class="about-info">
+            <tr>
+              <td><b>Name:</b> Rudrita Rahman</td>
+              <td>
+                <b>E-mail:</b>
+                <a href="mailto:rudritarahman@gmail.com"
+                  >rudritarahman@gmail.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><b>Date of Birth:</b> 09 March, 2001</td>
+              <td><b>Nationality:</b> Bangladeshi</td>
+            </tr>
+          </table>
+          -->
         </div>
-        <div class="circle CSS">
-          <div class="inner">70% <br />CSS</div>
-        </div>
-        <div class="circle JavaScript">
-          <div class="inner">50% <br />JavaScript</div>
-        </div>
-        <div class="circle Python">
-          <div class="inner">75% <br />Python</div>
-        </div>
-        <div class="circle C-plus-plus">
-          <div class="inner">65% <br />C++</div>
-        </div>
-        <div class="circle Java">
-          <div class="inner">50% <br />Java</div>
+
+        <div class="skills">
+          <h3 style="text-align: center">Skills</h3>
+          <!--https://alvarotrigo.com/blog/progress-bar-css/-->
+          <div class="wrap-circles">
+            <div>
+              <div class="circle HTML">
+                <div class="inner">90% <br />HTML</div>
+              </div>
+              <div class="circle CSS">
+                <div class="inner">70% <br />CSS</div>
+              </div>
+            </div>
+            <div>
+              <div class="circle JavaScript">
+                <div class="inner">50% <br />JavaScript</div>
+              </div>
+              <div class="circle Python">
+                <div class="inner">75% <br />Python</div>
+              </div>
+            </div>
+            <div>
+              <div class="circle C-plus-plus">
+                <div class="inner">65% <br />C++</div>
+              </div>
+              <div class="circle Java">
+                <div class="inner">50% <br />Java</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -101,26 +144,32 @@
     <section id="education">
       <h1>Education</h1>
       <div class="degree">
-        <h2>Bachelor in Computer Science</h2>
-        <h4>
-          Independent University, Bangladesh <br />
-          2020 - Present
-        </h4>
-        <p><b>Minor: </b>Finance</p>
-        <hr />
-        <h2>Higher Secondary School Certificate</h2>
-        <h4>
-          Viqarunnisa Noon School & College <br />
-          2017 - 2019
-        </h4>
-        <p><b>Group: </b>Science</p>
-        <hr />
-        <h2>Secondary School Certificate</h2>
-        <h4>
-          Viqarunnisa Noon School & College <br />
-          2015 - 2017
-        </h4>
-        <p style="margin-bottom: 1rem"><b>Group: </b>Science</p>
+        <div class="edu-1">
+          <h2>Bachelor in Computer Science</h2>
+          <h4>
+            Independent University, Bangladesh <br />
+            2020 - Present
+          </h4>
+          <p><b>Minor: </b>Finance</p>
+        </div>
+
+        <div class="edu-2" style="margin: 0.1rem 0.75rem">
+          <h2>Higher Secondary School Certificate</h2>
+          <h4>
+            Viqarunnisa Noon School & College <br />
+            2017 - 2019
+          </h4>
+          <p><b>Group: </b>Science</p>
+        </div>
+
+        <div class="edu-3">
+          <h2>Secondary School Certificate</h2>
+          <h4>
+            Viqarunnisa Noon School & College <br />
+            2015 - 2017
+          </h4>
+          <p style="margin-bottom: 1rem"><b>Group: </b>Science</p>
+        </div>
       </div>
     </section>
     <!-- ====================== Education End ====================== -->
@@ -129,70 +178,111 @@
     <section id="certification">
       <h1>Certifications</h1>
       <div class="certificate">
-        <h2>Excel Skills for Business: Intermediate I</h2>
-        <h4>
-          Macquarie University | Coursera <br />
-          November 2, 2020
-        </h4>
-        <a
-          href="https://www.coursera.org/account/accomplishments/verify/NTUS3ZPYKV3V"
-          target="_blank"
-          ><i>Credential ID NTUS3ZPYKV3V</i>
-        </a>
-        <hr />
-        <h2>Excel Skills for Business: Essentials</h2>
-        <h4>
-          Macquarie University | Coursera <br />
-          September 2, 2020
-        </h4>
-        <a
-          href="https://www.coursera.org/account/accomplishments/verify/Q87F9G5QL6ZS"
-          target="_blank"
-          ><i>Credential ID Q87F9G5QL6ZS</i>
-        </a>
-        <hr />
-        <h2>HTML and CSS: Building a Single-Page Website</h2>
-        <h4>
-          Coursera Project Network
-          <br />
-          September 10, 2020
-        </h4>
-        <a
-          href="https://www.coursera.org/account/accomplishments/verify/DT98G2VMHAZG"
-          target="_blank"
-          ><i>Credential ID DT98G2VMHAZG</i>
-        </a>
-        <hr />
-        <h2>Responsive Web Designing</h2>
-        <h4>
-          Creative IT Institute <br />
-          September, 2020
-        </h4>
-        <hr />
-        <h2>Responsive Website Basics: Code with HTML, CSS, and JavaScript</h2>
-        <h4>
-          University of London | Coursera
-          <br />
-          August 28, 2020
-        </h4>
-        <a
-          href="https://www.coursera.org/account/accomplishments/verify/T3T8XMQXMSAY"
-          target="_blank"
-          ><i>Credential ID T3T8XMQXMSAY</i>
-        </a>
-        <hr />
-        <h2>Introduction to HTML5</h2>
-        <h4>
-          University of Michigan | Coursera
-          <br />
-          July 20, 2020
-        </h4>
-        <a
-          href="https://www.coursera.org/account/accomplishments/verify/xfrue8epmqjt"
-          target="_blank"
-          style="margin-bottom: 1rem"
-          ><i>Credential ID XFRUE8EPMQJT</i>
-        </a>
+        <div>
+          <!--1-->
+          <div>
+            <h2>
+              <i class="bx bxs-star"></i> Excel Skills for Business:
+              Intermediate I
+            </h2>
+            <h4>
+              Macquarie University | Coursera <br />
+              November 2, 2020
+            </h4>
+            <a
+              href="https://www.coursera.org/account/accomplishments/verify/NTUS3ZPYKV3V"
+              target="_blank"
+              ><i>Credential ID NTUS3ZPYKV3V</i>
+            </a>
+          </div>
+          <!--1-->
+
+          <!--2-->
+          <div>
+            <h2>
+              <i class="bx bxs-star"></i> Excel Skills for Business: Essentials
+            </h2>
+            <h4>
+              Macquarie University | Coursera <br />
+              September 2, 2020
+            </h4>
+            <a
+              href="https://www.coursera.org/account/accomplishments/verify/Q87F9G5QL6ZS"
+              target="_blank"
+              ><i>Credential ID Q87F9G5QL6ZS</i>
+            </a>
+          </div>
+          <!--2-->
+        </div>
+
+        <div>
+          <!--3-->
+          <div>
+            <h2>
+              <i class="bx bxs-star"></i> HTML and CSS: Building a Single-Page
+              Website
+            </h2>
+            <h4>
+              Coursera Project Network
+              <br />
+              September 10, 2020
+            </h4>
+            <a
+              href="https://www.coursera.org/account/accomplishments/verify/DT98G2VMHAZG"
+              target="_blank"
+              ><i>Credential ID DT98G2VMHAZG</i>
+            </a>
+          </div>
+          <!--3-->
+
+          <!--4-->
+          <div>
+            <h2><i class="bx bxs-star"></i> Responsive Web Designing</h2>
+            <h4>
+              Creative IT Institute <br />
+              September, 2020
+            </h4>
+          </div>
+          <!--4-->
+        </div>
+
+        <div>
+          <!--5-->
+          <div>
+            <h2>
+              <i class="bx bxs-star"></i>
+              Responsive Website Basics: Code with HTML, CSS, and JavaScript
+            </h2>
+            <h4>
+              University of London | Coursera
+              <br />
+              August 28, 2020
+            </h4>
+            <a
+              href="https://www.coursera.org/account/accomplishments/verify/T3T8XMQXMSAY"
+              target="_blank"
+              ><i>Credential ID T3T8XMQXMSAY</i>
+            </a>
+          </div>
+          <!--5-->
+
+          <!--6-->
+          <div>
+            <h2><i class="bx bxs-star"></i> Introduction to HTML5</h2>
+            <h4>
+              University of Michigan | Coursera
+              <br />
+              July 20, 2020
+            </h4>
+            <a
+              href="https://www.coursera.org/account/accomplishments/verify/xfrue8epmqjt"
+              target="_blank"
+              style="margin-bottom: 1rem"
+              ><i>Credential ID XFRUE8EPMQJT</i>
+            </a>
+          </div>
+          <!--6-->
+        </div>
       </div>
     </section>
     <!-- ====================== Certification End ====================== -->
@@ -200,8 +290,10 @@
     <!-- ====================== Project Start ====================== -->
     <section id="project">
       <h1>Project</h1>
-      <h3>Github Repository Link</h3>
-      <ul style="margin: 0 3rem; list-style: disc">
+      <h3 style="text-align: center; font-size: 1.5rem">
+        Github Repository Link
+      </h3>
+      <ul style="margin: 0 3rem; list-style: disc; text-align: center">
         <li>
           <a
             href="https://github.com/rudritarahman/Library-Management-System"
@@ -233,35 +325,40 @@
     <!-- ====================== Project End ====================== -->
 
     <!-- ====================== Contact Start ====================== -->
-    <section id="contact" style="padding: 1rem 2rem">
-      <h1>Get in Touch</h1>
-      <p>
-        Feel free to get in touch with me. I am always open to discussing new
-        projects, creative ideas or opportunities to be part of your visions.
+    <section id="contact" style="margin-left: 2rem; margin-right: 2rem">
+      <h1 style="margin-top: 2.5rem">Get in Touch</h1>
+      <p style="margin: 0 4.5rem 1.5rem; text-align: center">
+        Feel free to get in touch with me. <br />
+        I am always open to discussing new projects, creative ideas or
+        opportunities to be part of your visions.
       </p>
-      <h3>Address</h3>
-      <p>27/1, 27/2 West Malibagh, Ramna, Dhaka - 1217</p>
-      <h3>Mail Me</h3>
-      <a href="mailto:rudritarahman@gmail.com">rudritarahman@gmail.com</a>
-      <h3>Call Me</h3>
-      <p>(+880)-1789378131</p>
-      <ul class="social-link" style="display: flex">
-        <li>
-          <a href="https://www.facebook.com/" target="_blank"
-            ><i class="bx bxl-facebook"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/" target="_blank"
-            ><i class="bx bxl-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://github.com/" target="_blank"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </li>
-      </ul>
+      <div class="contact">
+        <div>
+          <h3 style="padding: 1rem 0 0.5rem; text-align: center">Mail Me</h3>
+          <p style="text-align: center">
+            <a href="mailto:rudritarahman@gmail.com">rudritarahman@gmail.com</a>
+          </p>
+          <h3 style="padding: 1rem 0 0.5rem; text-align: center">Call Me</h3>
+          <p style="text-align: center">(+880)-1789378131</p>
+          <h3 style="padding: 1rem 0 0.5rem; text-align: center">Address</h3>
+          <p style="text-align: center; padding-bottom: 1.5rem">
+            27/1, 27/2 West Malibagh, Ramna, Dhaka - 1217
+          </p>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7304.000752153381!2d90.41106!3d23.747366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b889b3e0e0c3%3A0xf35033bce6313298!2zMjcgVyBNYWxpYmFnaCwg4Kai4Ka-4KaV4Ka-IDEyMTc!5e0!3m2!1sbn!2sbd!4v1668358486741!5m2!1sbn!2sbd"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <h3 style="padding: 1rem 0 0.5rem">Wanna Leave a Message!</h3>
       <form action="#">
         <input
           type="text"
@@ -283,8 +380,8 @@
         /><br />
         <textarea
           name="message"
-          rows="3"
-          cols="25"
+          rows="5"
+          cols="55"
           placeholder="YOUR MESSAGE"
         ></textarea>
         <br />
