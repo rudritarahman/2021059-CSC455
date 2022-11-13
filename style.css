@@ -6,12 +6,6 @@
   color: black;
 }
 
-h1,
-h2,
-h3 {
-  margin: 1rem 0 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -26,10 +20,10 @@ img {
   max-width: 100%;
 }
 
-table {
-  border-spacing: 1rem;
-  margin-left: -1rem;
-}
+/*table {
+  border-spacing: 2rem;
+  font-size: 1.3rem;
+}*/
 
 /* Just for Check */
 /* table,
@@ -41,7 +35,14 @@ table {
 
 .container {
   width: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  background-blend-mode: screen;
 }
 
 /* Common CSS End */
@@ -108,7 +109,7 @@ table {
 /* Home Start */
 #home {
   width: 100%;
-  height: 40vh;
+  height: 25vh;
   background-image: url(/images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -119,12 +120,12 @@ table {
 .overlay--background {
   position: absolute;
   width: 100%;
-  height: 40vh;
+  height: 25vh;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(255, 127, 80, 0.65); /* Black background with opacity */
+  background-color: rgb(255, 127, 80, 0.65); /* Background with opacity */
   z-index: 2;
 }
 
@@ -177,7 +178,7 @@ table {
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding-bottom: 0.5rem;
   margin-top: 2rem;
   color: coral;
@@ -186,10 +187,33 @@ table {
 #about h3 {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   padding-bottom: 0.7rem;
   color: rgb(232, 105, 59);
 }
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.personal-infos {
+  line-height: 2rem;
+  margin-right: 7rem;
+  font-size: 1.3rem;
+}
+
+.social-link li a i {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+/*.about-info {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}*/
 
 .wrap-circles {
   display: flex;
@@ -251,25 +275,47 @@ table {
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding-bottom: 1.3rem;
   color: coral;
 }
 
 .degree {
-  background-color: rgb(255, 127, 80, 0.3);
-  border-radius: 1rem;
-  margin: 0 2rem;
-  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .degree h4 {
   padding: 0.5rem 0;
 }
 
-.degree hr {
-  margin-top: 1rem;
-  border: 0.1rem dashed red;
+.edu-1 {
+  background-image: linear-gradient(
+    45deg,
+    #ff9a9e 0%,
+    #fad0c4 99%,
+    #fad0c4 100%
+  );
+  /*background-color: #f8ad9d;*/
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.edu-2 {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  /*background-color: #fbc4ab;*/
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.edu-3 {
+  background-image: linear-gradient(to top, #fad0c4 0%, #ff9a9e 100%);
+  /*background-color: #ffdab9;*/
+  border-radius: 1rem;
+  padding: 1rem;
 }
 /* Education End */
 
@@ -278,25 +324,33 @@ table {
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding-bottom: 1.3rem;
   margin-top: 3rem;
   color: coral;
 }
 
 .certificate {
-  background-color: rgba(240, 56, 32, 0.2);
+  background-image: linear-gradient(
+    -20deg,
+    #ddd6f3 0%,
+    #faaca8 100%,
+    #faaca8 100%
+  );
+  /*background-color: #e6dce5;*/
   border-radius: 1rem;
-  margin: 0 2rem;
-  padding: 0.5rem 2rem;
+  margin: 0 3rem;
+  padding: 1.5rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.certificate h2 {
+  padding-top: 1rem;
 }
 .certificate h4 {
   padding: 0.5rem 0;
-}
-
-.certificate hr {
-  margin-top: 1rem;
-  border: 0.1rem dashed red;
 }
 
 /* Certification End */
@@ -306,7 +360,7 @@ table {
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding-bottom: 1.3rem;
   margin-top: 2.5rem;
   color: coral;
@@ -327,26 +381,27 @@ table {
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding-bottom: 1.3rem;
   color: coral;
 }
 
-#contact .social-link li a i {
-  padding: 1rem 0.5rem 0 0;
-  font-size: 1.5rem;
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
 #contact form input {
   margin-top: 1rem;
   padding: 0.5rem 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
   border-radius: 0.3rem;
 }
 
 #contact form textarea {
   margin-top: 1rem;
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
   border-radius: 0.3rem;
 }
 
@@ -354,7 +409,7 @@ table {
   margin: 1rem 0;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   color: rgb(255, 0, 0);
   background-color: rgb(244, 203, 189);
@@ -372,7 +427,21 @@ footer {
 /* Contact End */
 
 /* Media Queries Start */
+@media only screen and (max-width: 992px) {
+  .edu-1 {
+    margin-bottom: 1rem;
+  }
+
+  .edu-3 {
+    margin-top: 1rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
   .menu a:not(:first-child) {
     display: none;
   }
